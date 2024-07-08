@@ -1,11 +1,11 @@
 const sql = require("mssql");
 const config = {
-  user: 'sa',
-  password: 'sa',
-  server: 'localhost',
-  database: 'Shopping_db',
+  user: 'adminreem',
+  password: '13707177@Reem',
+  server: 'userver2024.database.windows.net',
+  database: 'Shoppingdb008',
   options:{
-    trustServerCertificate:true
+    encrypt:true //used if you're om windows azure
   }
 };
 sql.connect(config).catch((error) => console.log(error));
