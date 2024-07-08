@@ -11,7 +11,7 @@ app.use(cors());
 
 //===========================
 app.use(bodyParser.json());
-const swaggerOptions = {
+const swaggerOptions 
     swaggerDefinition: {
         info: {
             title: "Express Server API",
@@ -22,7 +22,7 @@ const swaggerOptions = {
         basePath: '/',
         schemes: ['http']
     },
-    servers: [{ url: `https://reemkhalid-app-1ff87c91f50d.herokuapp.com` }],
+    servers: [{ url: `https://reemkhalid-app-1ff87c91f50d.herokuapp.com`}],
     apis: ['./server.js']
 };
 
