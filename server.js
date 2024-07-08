@@ -17,11 +17,11 @@ const swaggerOptions = {
             version: "0.0.1",
             description: "A simple express api with swagger"
         },
-        host: "localhost:3004",
+        host: "reemkhalid-app-1ff87c91f50d.herokuapp.com",
         basePath: '/',
         schemes: ['http']
     },
-    servers: [{ url: `http://localhost:${port}` }],
+    servers: [{ url: `https://reemkhalid-app-1ff87c91f50d.herokuapp.com` }],
     apis: ['./server.js']
 };
 
@@ -203,6 +203,6 @@ app.delete('/api/users/:id', async(req, res) => { //id == Param
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-    console.log(`Swagger UI is available on http://localhost:${port}/api-ui`);
+    console.log(`Server is running on https://reemkhalid-app-1ff87c91f50d.herokuapp.com/`);
+    console.log(`Swagger UI is available on https://reemkhalid-app-1ff87c91f50d.herokuapp.com/api-ui`);
 });
