@@ -23,7 +23,7 @@ const swaggerOptions = {
         schemes: ['https']
     },
     servers: [{ url: `https://reemkhalid-app-1ff87c91f50d.herokuapp.com`}],
-    apis: ['./server.js']
+    apis: ['./server2.js']
 };
 
 const swaggerDocs = swaggerJSDoc(swaggerOptions);
