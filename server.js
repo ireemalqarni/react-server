@@ -6,7 +6,7 @@ const swaggerJSDoc = require('swagger-jsdoc');
 const cors = require('cors');
 const app = express();
 // const port = 3004;
-const port = process.env.PORT || 5768;
+const PORT = process.env.PORT || 5768;
 app.use(cors());
 
 //===========================
@@ -203,7 +203,7 @@ app.delete('/api/users/:id', async(req, res) => { //id == Param
     }
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Server is running on https://reemkhalid-app-1ff87c91f50d.herokuapp.com/`);
     console.log(`Swagger UI is available on https://reemkhalid-app-1ff87c91f50d.herokuapp.com/api-ui`);
 });
