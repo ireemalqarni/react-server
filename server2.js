@@ -5,8 +5,8 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
 const cors = require('cors');
 const app = express();
-const port = 3005;
-const path =  require('path');
+// const port = 3005;
+const port = process.env.PORT || 5768;
 app.use(cors());
 
 //===========================
@@ -18,12 +18,12 @@ const swaggerOptions = {
             version: "0.0.1",
             description: "A simple express api with swagger"
         },
-        host: "localhost:3005",
+        host: "reemkhalid-app-1ff87c91f50d.herokuapp.com",
         basePath: '/',
-        schemes: ['http']
+        schemes: ['https']
     },
-    servers: [{ url: `http://localhost:${port}` }],
-    apis: ['./server2.js']
+    servers: [{ url: `https://reemkhalid-app-1ff87c91f50d.herokuapp.com`}],
+    apis: ['./server.js']
 };
 
 const swaggerDocs = swaggerJSDoc(swaggerOptions);
@@ -208,6 +208,6 @@ app.delete('/api/product/:id', async(req, res) => { //id == Param
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-    console.log(`Swagger UI is available on http://localhost:${port}/api-ui`);
+    console.log(`Server is running on https://reemkhalid-app-1ff87c91f50d.herokuapp.com/`);
+    console.log(`Swagger UI is available on https://reemkhalid-app-1ff87c91f50d.herokuapp.com/api-ui`);
 });

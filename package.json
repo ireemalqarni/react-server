@@ -6,6 +6,10 @@
     "start":"node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "scripts": {
+    "start":"node server2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
