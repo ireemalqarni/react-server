@@ -18,7 +18,7 @@ const swaggerOptions={
             version: "0.0.1",
             description: "A simple express api with swagger"
         },
-        host: "reemapp-dcca9dc801ff.herokuapp.com/",
+        host: "reemapp-dcca9dc801ff.herokuapp.com",
         basePath: '/',
         schemes: ['https']
     },
