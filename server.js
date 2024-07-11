@@ -204,6 +204,6 @@ app.delete('/api/users/:id', async(req, res) => { //id == Param
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on https://reemapp-dcca9dc801ff.herokuapp.com/`);
+    console.log(`Server is running on https://reemapp-dcca9dc801ff.herokuapp.com`);
     console.log(`Swagger UI is available on https://reemapp-dcca9dc801ff.herokuapp.com/api-ui`);
 });
